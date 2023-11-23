@@ -11,9 +11,12 @@
         <div class="container bg-dark text-light vh-100 d-flex align-items-center justify-content-center">
             <div class="container bg-dark shadow w-50 rounded-3 border-success border-2 p-3 d-flex flex-column">
                 <h1 class="display-1 fs-1 text-center">minutes to seconds</h1>
-                <input class="form-control w-auto mx-auto my-2" type="number" placeholder="minutes" id="minutes" required>
-                <!-- <button class="btn btn-success mx-auto my-2">Convert</button> -->
-                <h5 class="display-5 fs-5 mx-auto text-center" id="output">seconds</h5>
+                <input class="form-control w-auto mx-auto my-2" type="number" placeholder="minutes" id="timeInput" required>
+                <div class="mx-auto">
+                    <button class="btn btn-success mx-auto my-2" convert="min">minutes</button>
+                    <button class="btn btn-success mx-auto my-2" convert="sec" disabled>seconds</button>
+                </div>
+                <h5 class="display-5 fs-5 mx-auto text-center" id="output"></h5>
             </div>
         </div>
         <script src="./js/main.js"></script>
